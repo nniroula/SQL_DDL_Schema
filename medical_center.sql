@@ -12,3 +12,9 @@ VALUES (1,  'University Hospital');
 
 INSERT INTO medical_center(id, name)
 VALUES (2,  'Aurora Medical Center');
+
+INSERT INTO medical_center(id, name) VALUES 
+    (3, 'Swedish Medical Center'),
+    (4, 'Childrens Colorado');
+
+
