@@ -25,13 +25,19 @@ VALUES(1, 'John', 1),
 CREATE TABLE posts(
     id SERIAL PRIMARY KEY,
     title TEXT,
+    text TEXT,
     user_id INTEGER REFERENCES users(id),
     location TEXT,
     region_id INTEGER REFERENCES lists(id)
 );
+INSERT INTO posts(id, title, text, user_id, location, region_id)
+VALUES(1, 'Online shopping', 'wrong item', 2, 'Colorado', 1);
+
 
 CREATE TABLE post_categories(
     id SERIAL PRIMARY KEY,
     categories TEXT,
     posts_id INTEGER REFERENCES posts(id)
 );
+INSERT INTO post_categories(id, categories, posts_id)
+VALUES(1, 'text message', 1);
