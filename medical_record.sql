@@ -54,3 +54,6 @@ CREATE TABLE diseases(
 INSERT INTO diseases(id, disease, patient_id)
 VALUES(1, 'Dark Circle', 3);
 
+
+
+
